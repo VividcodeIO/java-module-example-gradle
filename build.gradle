@@ -1,0 +1,19 @@
+plugins {
+    id "org.javamodularity.moduleplugin" version "1.6.0"
+}
+
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: "org.javamodularity.moduleplugin"
+
+    group 'io.vividcode.advancedjava.module-example-gradle'
+    version '1.0.0-SNAPSHOT'
+
+    sourceCompatibility = 11
+    targetCompatibility = 11
+
+    repositories {
+        mavenCentral()
+    }
+}
+
